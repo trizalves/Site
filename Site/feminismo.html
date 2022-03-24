@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+    <html lang="pt-br">
+        <head> 
+            <style>
+                body{
+                    width: 800px;
+		            height: 600px;
+		            margin: auto;
+                    text-align: justify;
+                    color: white;    
+                }
+                article h1{
+                    text-align: center;
+                }
+                article{
+                    background-color: pink(160, 166, 167);
+                }
+                article{ font-family: Courier, monospace; }
+                .name{color: #CD1076;
+                      font-size:35px;
+                      padding: 0px;}
+                .button {
+                   transition-duration: 0.4s;
+                }
+
+                .button:hover {
+                 background-color: #4CAF50; /* Green */
+                 color: white;
+                }
+                .cont{content: &ldquo;
+                      border-color: white;
+                      }
+                .container {position: relative;
+                            width: 50%;
+                            display: inline-block;}
+                .image {
+                    opacity: 1;
+                    display: inline-block;
+                    width: 100%;
+                    height: auto;
+                    transition: .5s ease;
+                    backface-visibility: hidden;
+                  }
+
+                  .middle {
+                    transition: .5s ease;
+                    opacity: 0;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    -ms-transform: translate(-50%, -50%)
+                  }
+
+                  .container:hover .image {
+                    opacity: 0.3;
+                  }
+
+                  .container:hover .middle {
+                    opacity: 1;
+                  }
+
+                  .text {
+                    background-color: #CD3278;
+                    color: white;
+                    font-size: 16px;
+                    padding: 16px 32px;
+                    font-family: 'Arial';
+                    text-align: center;
+                  }
+                 
+                 .lad{
+                     display: inline-block;
+                     float: left;}
+
+                 .container2{position: absolute;
+                            display: inline-block;
+                            width: 50%;}
+                 .photo {
+                    padding: 15px;
+                    padding-top: 0px;
+                   display: inline-block;
+                   width: 59%;
+                   height: auto;
+                 }
+
+                .corer{ font-family: Serif, 'Georgia';
+                       text-align: center;
+                       font-size: 20px;
+                       color: #FF3E96; }
+                 .lood{
+                    
+                    padding-left: 15px;
+                    margin-right: 250px;
+                    display: inline-block;
+                    float: right;
+                    text-align: justify;
+                    font-family: Courier, monospace;}
+                
+                .container3{ position: relative; 
+                             margin: auto;
+                    text-align: justify;}
+
+                .norm{ content: &ldquo;
+                      border-color: white;
+                      width: 25%;}
+                .julg{ display: inline-block;
+                   width: 60%;
+                   height: auto;
+                 } 
+                 .fim{height: 10em;
+                 display: flex;
+                 align-items: center;
+                  justify-content: center;
+                  padding-left: 15px;
+                     margin-right: 250px;}
+                h5{color: #EE1289;
+                width: 50%;
+                }
+              
+            </style>
+            <script>
+                function changeBackground(color) {
+                    document.body.style.background = color;
+                }
+                window.addEventListener("load",function() { changeBackground('black') });
+
+            </script>
+        </head>
+        <body> 
+            
+            <article>
+            <a href="index.html"><button style="background: #CD6090; border-radius: 5px; padding: 10px; cursor: pointer; color: #fff; border: none; font-size: 16px;">Página Inicial</button></a>
+            <a href="relatos.html"><button style="background: #CD6090; border-radius: 5px; padding: 10px; cursor: pointer; color: #fff; border: none; font-size: 16px;">Relatos</button></a>
+            <h1 class="name"> MARIA DA PENHA ✞</h1>
+            <hr class="cont"> 
+
+            <div class="container">
+                <img src="maria.jpg" alt="mariadpenha" class="image" style="width:100%">
+            <div class="middle">
+                <div class="text">
+                    O caso Maria da Penha é representativo da violência doméstica à qual milhares de mulheres são submetidas em todo o Brasil.</div>
+             </div>
+             <h3 class="corer"> HISTÓRIA </h3>
+             <p>Maria da Penha Maia Fernandes (Fortaleza-CE, 1º de fevereiro de 1945) é farmacêutica bioquímica e se formou na Faculdade de Farmácia e Bioquímica da Universidade Federal do Ceará em 1966, concluindo o seu mestrado em Parasitologia em Análises Clínicas na Faculdade de Ciências Farmacêuticas da Universidade de São Paulo em 1977.</p>
+            <p class="lad"> Em 1974, Maria da Penha conheceu Marco Antonio Heredia Viveros, ele demonstrava ser muito amável, educado e solidário com todos à sua volta. O casamento aconteceu em 1976. Após o nascimento da primeira filha e da finalização do mestrado de Maria da Penha, eles se mudaram para Fortaleza, onde nasceram as outras duas filhas do casal. Foi a partir desse momento que essa história mudou. </p>
+            <p>As agressões começaram a acontecer quando ele conseguiu a cidadania brasileira e se estabilizou profissional e economicamente. Agia sempre com intolerância, exaltava-se com facilidade e tinha comportamentos explosivos não só com a esposa mas também com as próprias filhas.</p>
+            </div>
+            <div class="container2">
+                <img src="mdp.jpeg" alt="maria" class="photo" style="width: 59%">
+            <div class="overlay">
+                <div class="texto">
+                    </div>
+                </div>
+                <h3 class="corer"> O CRIME </h3>
+            <p class="lood">NO ANO DE 1983, Maria da Penha foi vítima de dupla tentativa de feminicídio por parte de Marco Antonio Heredia Viveros. Um dia, ela estava dormindo quando foi atingida por um tiro nas costas de seu marido. Porém ele negou, disse que havia sido uma tentativa de assalto.
+            Devido ao tiro, ela ficou paraplégica, e ao voltar pra casa, foi mantida em cárcere privado durante 15 anos. </p>
+            <p class="lood"> Após muitas agressões e tentativas de homicídio, com ajuda de amigos e família de Maria da Penha conseguiram dar apoio jurídico a ela e providenciaram a sua saída de casa sem que isso pudesse configurar abandono de lar; assim, não haveria o risco de perder a guarda de suas filhas.</p>
+            <p class="lood"> Maria da Penha ficou 19 anos lutando por justiça, no primeiro julgamento, em 1991 o agressor foi condenado a 15 anos de prisão e ao segundo julgamento, 5 anos depois, foi condenado a 10 anos e meio, mas não cumpriu nenhum deles devido a recursos movidos por seu advogado. </p>
+            <div class="container3">
+            <hr class="norm">
+            <p class="fim">O PRIMEIRO JULGAMENTO DE MARCO ANTONIO ACONTECEU SOMENTE EM 1991, OU SEJA, OITO ANOS APÓS O CRIME. O AGRESSOR FOI SENTENCIADO A 15 ANOS DE PRISÃO, MAS, DEVIDO A RECURSOS SOLICITADOS PELA DEFESA, SAIU DO FÓRUM EM LIBERDADE.</p>
+            <img src="final.png" alt="julgamento" id="julg" style="width: 60%">
+            <p class="fim"> Então Maria escreveu o livro "Sobrevivi... posso contar" com objetivo de ajudar outras mulheres. E graças a repercussão desse caso, foi sancionada a Lei Maria da Penha pelo presidente Lula. </p>
+            </div>
+            </article>
+            <h5>A SUA TRAJETÓRIA EM BUSCA DE JUSTIÇA DURANTE 19 ANOS E 6 MESES FAZ DELA UM SÍMBOLO DE LUTA POR UMA VIDA LIVRE DE VIOLÊNCIA.</h5>
+            <aside>
+                <h3> Vídeo explicativo do site abaixo:</h3>
+                <iframe src="video.mp4"> </iframe>
+            </aside>
+        </body>
+
+    </html>

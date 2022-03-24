@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+	<html lang="pt-br">
+		<head>
+			<title> Denúncia </title>
+			<meta charset="utf-8">
+			<style type="text/css">
+				body{width: 800px;
+		     		 height: 600px;
+		     		 margin: auto;
+			 		 color: white;}
+			 	header{font-size: 25px}
+			 	form, nav{font-size: 20px}
+				h1{text-align: center;
+				border-style: dotted;}
+				textarea{width: 250px;
+						 height: 150px}
+			</style>
+		</head>
+		<body>
+			<script type="text/javascript">
+				function changeBackground(color) {
+        document.body.style.background = color;
+           }
+
+       window.addEventListener("load",function() { changeBackground('DarkRed') });
+			</script>
+			<header>
+				<h1> FAÇA SUA DENÚNCIA AQUI! </h1>
+			</header>
+			<form>
+				<br>
+				<p> Nome: <input type="text" name="nome" placeholder="Opcional"> </p>
+				<p> Email: <input type="Email" name="email" placeholder="Opcional"> </p>
+				<p> Nome do agressor: <input type="text" name="nome"> </p>
+				<p> Onde o crime foi visto? <input type="text" name="endereco" required="obrigatorio"></p>
+				<p> Gênero: </p> 
+					<input type="radio" name="sex" value="masc"> Masculino <br>
+					<input type="radio" name="sex" value="masc"> Feminino <br>
+					<input type="radio" name="sex" value="masc"> Outros <br>
+					<input type="radio" name="sex" value="masc"> Prefiro não responder <br>
+				<p> Motivo da denúncia: </p>
+					<input type="checkbox" name="estupro" value="estupro"> Estupro <br>
+					<input type="checkbox" name="morte" value="morte"> Assassinato <br>
+					<input type="checkbox" name="violência" value="violência"> Violência física/ psicológica <br>
+					<input type="checkbox" name="ameaça" value="ameaça"> Ameaças <br>
+				<p> Quem é a vítima? </p>
+					<select name="vítima">
+						<option value="user"> Eu </option>
+						<option value="conhecido"> Pessoa conhecida </option>
+						<option value="desconhecido"> Pessoa desconhecida </option>
+						<option value="Parente"> Familiar </option>
+					</select>
+				<p> Qual a idade da vítima? </p>
+					<input type="number">
+				<p> Quando o crime foi visto? </p>
+					<input type="date" name="data" required="obrigatorio">
+					<input type="time" name="horário">
+				<br>
+				<br>
+					<textarea> Descreva o ocorrido:</textarea>
+				<br>
+				<br>
+					<input type="submit" value="Enviar">
+					<input type="reset" value="Cancelar">
+			</form>
+			<nav>
+				<p> Voltar para a <a href="index.html">página inicial</a></p>
+			</nav>
+			<br>
+		</body>
+	</html>
